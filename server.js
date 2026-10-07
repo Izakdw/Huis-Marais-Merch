@@ -9,16 +9,32 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
+// Support both nested folders (local) and flat file layout (cloud upload)
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
+app.use('/images/merch', express.static(path.join(__dirname, 'public', 'images', 'merch')));
+app.use('/images/merch', express.static(__dirname));
+app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
+app.use('/images', express.static(__dirname));
 
-const DATA_DIR = path.join(__dirname, 'data');
-const STORE_FILE = path.join(DATA_DIR, 'store.json');
-const INITIAL_DATA_FILE = path.join(DATA_DIR, 'initial_data.json');
+const DATA_DIR = fs.existsSync(path.join(__dirname, 'data')) ? path.join(__dirname, 'data') : __dirname;
+const STORE_FILE = fs.existsSync(path.join(DATA_DIR, 'store.json')) 
+  ? path.join(DATA_DIR, 'store.json') 
+  : (fs.existsSync(path.join(__dirname, 'store.json')) ? path.join(__dirname, 'store.json') : path.join(DATA_DIR, 'store.json'));
+const INITIAL_DATA_FILE = fs.existsSync(path.join(DATA_DIR, 'initial_data.json'))
+  ? path.join(DATA_DIR, 'initial_data.json')
+  : path.join(__dirname, 'initial_data.json');
 
 // Ensure data folder exists
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
+
+app.get('/', (req, res) => {
+  const localIndex = path.join(__dirname, 'public', 'index.html');
+  if (fs.existsSync(localIndex)) return res.sendFile(localIndex);
+  return res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 // Initialize store if not present
 function getStore() {
@@ -167,9 +183,22 @@ function calculateMetrics(store) {
 // ---------------- API ROUTES ----------------
 
 // GET Full State
-// Serve public resident catalog page
 app.get('/catalog', (req, res) => {
-  res.redirect('/catalog.html');
+  const localCatalog = path.join(__dirname, 'public', 'catalog.html');
+  if (fs.existsSync(localCatalog)) return res.sendFile(localCatalog);
+  return res.sendFile(path.join(__dirname, 'catalog.html'));
+});
+
+app.get('/catalog.html', (req, res) => {
+  const localCatalog = path.join(__dirname, 'public', 'catalog.html');
+  if (fs.existsSync(localCatalog)) return res.sendFile(localCatalog);
+  return res.sendFile(path.join(__dirname, 'catalog.html'));
+});
+
+app.get('/index.html', (req, res) => {
+  const localIndex = path.join(__dirname, 'public', 'index.html');
+  if (fs.existsSync(localIndex)) return res.sendFile(localIndex);
+  return res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // GET Public Catalog Data (NO cost prices, NO profit margins, NO sales logs!)
