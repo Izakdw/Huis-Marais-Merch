@@ -229,22 +229,16 @@ app.get('/api/public-catalog', (req, res) => {
     });
 
     const imageMap = {
-      'white-supporters-jersey': '/images/white-supporters-jersey.jpeg',
-      'vintage-polo-shirt': '/images/vintage-polo-shirt.webp',
-      '80th-year-pullover': '/images/merch/image2.png',
-      'quarter-zip': '/images/merch/image10.png',
-      'windbreaker': '/images/merch/image11.png',
-      'rain-jackets': '/images/merch/image12.png',
-      'black-sport-shorts': '/images/merch/image14.png',
-      'white-sport-shorts': '/images/merch/image15.png',
-      'socks': '/images/merch/image16.png',
-      '80th-rugby-jersey': '/images/merch/image18.png',
-      'hm-80-years-t-shirt': '/images/merch/image19.png',
-      'dress-shirt': '/images/merch/image20.png',
-      '80th-year-hat': '/images/merch/image21.jpeg',
-      'newcomers-caps': '/images/merch/image23.png',
-      'alumni-cap': '/images/merch/image24.jpeg',
-      'first-years-shirt': '/images/merch/image25.jpeg'
+      '80th-year-pullover': '/image8.png',
+      'dress-shirt': '/image11.png',
+      '80th-year-hat': '/image12.png',
+      '80th-rugby-jersey': '/image13.png',
+      'hm-80-years-t-shirt': '/image14.png',
+      'white-t-shirt-no-6': '/image16.png',
+      'alumni-cap': '/image19.png',
+      'first-years-shirt': '/image20.png',
+      'vintage-polo-shirt': '/vintage-polo-both.jpeg',
+      'rugby-jersey-green-yellow': '/image24.jpeg'
     };
 
     const publicCatalog = store.products.map(p => {
