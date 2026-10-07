@@ -10,8 +10,9 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 // Support both nested folders (local) and flat file layout (cloud upload)
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname));
+// { index: false } prevents accidental public exposure of index.html at root
+app.use(express.static(path.join(__dirname, 'public'), { index: false }));
+app.use(express.static(__dirname, { index: false }));
 app.use('/images/merch', express.static(path.join(__dirname, 'public', 'images', 'merch')));
 app.use('/images/merch', express.static(__dirname));
 app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
@@ -30,10 +31,11 @@ if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
+// DEFAULT STOREFRONT FOR RESIDENTS: Root (/) serves the student catalog (NO profits/costs)
 app.get('/', (req, res) => {
-  const localIndex = path.join(__dirname, 'public', 'index.html');
-  if (fs.existsSync(localIndex)) return res.sendFile(localIndex);
-  return res.sendFile(path.join(__dirname, 'index.html'));
+  const localCatalog = path.join(__dirname, 'public', 'catalog.html');
+  if (fs.existsSync(localCatalog)) return res.sendFile(localCatalog);
+  return res.sendFile(path.join(__dirname, 'catalog.html'));
 });
 
 // Initialize store if not present
@@ -195,10 +197,16 @@ app.get('/catalog.html', (req, res) => {
   return res.sendFile(path.join(__dirname, 'catalog.html'));
 });
 
-app.get('/index.html', (req, res) => {
+// PRIVATE ADMIN PORTAL (Only for Izak to manage sales/stock)
+app.get('/admin', (req, res) => {
   const localIndex = path.join(__dirname, 'public', 'index.html');
   if (fs.existsSync(localIndex)) return res.sendFile(localIndex);
   return res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// If anyone visits index.html directly, redirect them to the safe resident catalog
+app.get('/index.html', (req, res) => {
+  res.redirect('/');
 });
 
 // GET Public Catalog Data (NO cost prices, NO profit margins, NO sales logs!)
