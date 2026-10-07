@@ -1,0 +1,224 @@
+{
+  "products": [
+    {
+      "id": "white-supporters-jersey",
+      "name": "White supporters jersey",
+      "category": "Jerseys",
+      "colour": "White",
+      "costPrice": 590,
+      "costPriceVat": 678.5,
+      "sellingPrice": 700,
+      "sizes": ["S", "M", "L", "XL", "XXL", "w"],
+      "defaultEst": {}
+    },
+    {
+      "id": "black-sport-shorts",
+      "name": "Black sport shorts",
+      "category": "Shorts",
+      "colour": "Black",
+      "costPrice": 205,
+      "costPriceVat": 235.75,
+      "sellingPrice": 260,
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "white-sport-shorts",
+      "name": "White sport shorts",
+      "category": "Shorts",
+      "colour": "White",
+      "costPrice": 240,
+      "costPriceVat": 276,
+      "sellingPrice": 280,
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "quarter-zip",
+      "name": "1/4 Zip",
+      "category": "Tops",
+      "colour": "Standard",
+      "costPrice": 490,
+      "costPriceVat": 563.5,
+      "sellingPrice": 580,
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "windbreaker",
+      "name": "Windbreaker",
+      "category": "Jackets",
+      "colour": "Standard",
+      "costPrice": 745,
+      "costPriceVat": 856.75,
+      "sellingPrice": 880,
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "socks",
+      "name": "Socks",
+      "category": "Accessories",
+      "colour": "Standard",
+      "costPrice": 80,
+      "costPriceVat": 92,
+      "sellingPrice": 100,
+      "sizes": ["5-6", "7-8", "9-10", "11-12", "13-14"],
+      "defaultEst": {}
+    },
+    {
+      "id": "rain-jackets",
+      "name": "Rain Jackets",
+      "category": "Jackets",
+      "colour": "Standard",
+      "costPrice": 1010,
+      "costPriceVat": 1161.5,
+      "sellingPrice": 1200,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "hm-underwear",
+      "name": "HM underwear",
+      "category": "Underwear",
+      "colour": "Standard",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "80th-year-pullover",
+      "name": "80th Year Pullover",
+      "category": "Tops",
+      "colour": "White / off-white, green stripes",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "dress-shirt",
+      "name": "Dress shirt",
+      "category": "Shirts",
+      "colour": "White",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "80th-year-hat",
+      "name": "80th Year hat",
+      "category": "Headwear",
+      "colour": "Green and off-white",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "80th-rugby-jersey",
+      "name": "80th Rugby jersey",
+      "category": "Jerseys",
+      "colour": "Green, yellow stripes",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "hm-80-years-t-shirt",
+      "name": "HM 80 Years T-shirt",
+      "category": "T-Shirts",
+      "colour": "Green",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "white-t-shirt-no-6",
+      "name": "White T-shirt (No. 6 / house print)",
+      "category": "T-Shirts",
+      "colour": "White",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "alumni-cap",
+      "name": "Alumni cap",
+      "category": "Headwear",
+      "colour": "Green",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "first-years-shirt",
+      "name": "First Years shirt",
+      "category": "Shirts",
+      "colour": "Green, yellow trim",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "newcomers-caps",
+      "name": "Newcomers caps",
+      "category": "Headwear",
+      "colour": "Standard",
+      "costPrice": 110,
+      "costPriceVat": 126.5,
+      "sellingPrice": 150,
+      "sizes": ["One size"],
+      "defaultEst": {}
+    },
+    {
+      "id": "vintage-polo-shirt",
+      "name": "Vintage polo shirt",
+      "category": "Shirts",
+      "colour": "Green, yellow stripes",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "rugby-jersey-green-yellow",
+      "name": "Rugby jersey (green & yellow)",
+      "category": "Jerseys",
+      "colour": "Green, yellow side panels",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    },
+    {
+      "id": "rugby-jersey-green-white",
+      "name": "Rugby jersey (green & white)",
+      "category": "Jerseys",
+      "colour": "Green, white & yellow side panels",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+      "defaultEst": {}
+    }
+  ]
+}

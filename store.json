@@ -1,0 +1,1517 @@
+{
+  "products": [
+    {
+      "id": "white-supporters-jersey",
+      "name": "White supporters jersey",
+      "category": "Jerseys",
+      "colour": "White",
+      "costPrice": 590,
+      "costPriceVat": 678.5,
+      "sellingPrice": 700,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "w"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "black-sport-shorts",
+      "name": "Black sport shorts",
+      "category": "Shorts",
+      "colour": "Black",
+      "costPrice": 205,
+      "costPriceVat": 235.75,
+      "sellingPrice": 260,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "white-sport-shorts",
+      "name": "White sport shorts",
+      "category": "Shorts",
+      "colour": "White",
+      "costPrice": 240,
+      "costPriceVat": 276,
+      "sellingPrice": 280,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "quarter-zip",
+      "name": "1/4 Zip",
+      "category": "Tops",
+      "colour": "Standard",
+      "costPrice": 490,
+      "costPriceVat": 563.5,
+      "sellingPrice": 580,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "windbreaker",
+      "name": "Windbreaker",
+      "category": "Jackets",
+      "colour": "Standard",
+      "costPrice": 745,
+      "costPriceVat": 856.75,
+      "sellingPrice": 880,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "socks",
+      "name": "Socks",
+      "category": "Accessories",
+      "colour": "Standard",
+      "costPrice": 80,
+      "costPriceVat": 92,
+      "sellingPrice": 100,
+      "sizes": [
+        "5-6",
+        "7-8",
+        "9-10",
+        "11-12",
+        "13-14"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "rain-jackets",
+      "name": "Rain Jackets",
+      "category": "Jackets",
+      "colour": "Standard",
+      "costPrice": 1010,
+      "costPriceVat": 1161.5,
+      "sellingPrice": 1200,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "hm-underwear",
+      "name": "HM underwear",
+      "category": "Underwear",
+      "colour": "Standard",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "80th-year-pullover",
+      "name": "80th Year Pullover",
+      "category": "Tops",
+      "colour": "White / off-white, green stripes",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "dress-shirt",
+      "name": "Dress shirt",
+      "category": "Shirts",
+      "colour": "White",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "80th-year-hat",
+      "name": "80th Year hat",
+      "category": "Headwear",
+      "colour": "Green and off-white",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "80th-rugby-jersey",
+      "name": "80th Rugby jersey",
+      "category": "Jerseys",
+      "colour": "Green, yellow stripes",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "hm-80-years-t-shirt",
+      "name": "HM 80 Years T-shirt",
+      "category": "T-Shirts",
+      "colour": "Green",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "white-t-shirt-no-6",
+      "name": "White T-shirt (No. 6 / house print)",
+      "category": "T-Shirts",
+      "colour": "White",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "alumni-cap",
+      "name": "Alumni cap",
+      "category": "Headwear",
+      "colour": "Green",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "first-years-shirt",
+      "name": "First Years shirt",
+      "category": "Shirts",
+      "colour": "Green, yellow trim",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "newcomers-caps",
+      "name": "Newcomers caps",
+      "category": "Headwear",
+      "colour": "Standard",
+      "costPrice": 110,
+      "costPriceVat": 126.5,
+      "sellingPrice": 150,
+      "sizes": [
+        "One size"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "vintage-polo-shirt",
+      "name": "Vintage polo shirt",
+      "category": "Shirts",
+      "colour": "Green, yellow stripes",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "rugby-jersey-green-yellow",
+      "name": "Rugby jersey (green & yellow)",
+      "category": "Jerseys",
+      "colour": "Green, yellow side panels",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "rugby-jersey-green-white",
+      "name": "Rugby jersey (green & white)",
+      "category": "Jerseys",
+      "colour": "Green, white & yellow side panels",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "grey-hoodie",
+      "name": "Grey hoodie",
+      "category": "Jerseys",
+      "colour": "Grey",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 700,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "2025-dotted-golf-shirt",
+      "name": "2025 dotted golf shirt",
+      "category": "Tops",
+      "colour": "white and green dots",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 300,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "2026-tamaties-sponsor-golf-shirt",
+      "name": "2026 Tamaties sponsor Golf Shirt",
+      "category": "Tops",
+      "colour": "white",
+      "costPrice": 0,
+      "costPriceVat": 0,
+      "sellingPrice": 300,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    }
+  ],
+  "inventory": {
+    "white-supporters-jersey__S": {
+      "productId": "white-supporters-jersey",
+      "productName": "White supporters jersey",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-supporters-jersey__M": {
+      "productId": "white-supporters-jersey",
+      "productName": "White supporters jersey",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 4,
+      "countedQty": null
+    },
+    "white-supporters-jersey__L": {
+      "productId": "white-supporters-jersey",
+      "productName": "White supporters jersey",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 3,
+      "countedQty": null
+    },
+    "white-supporters-jersey__XL": {
+      "productId": "white-supporters-jersey",
+      "productName": "White supporters jersey",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 4,
+      "countedQty": null
+    },
+    "white-supporters-jersey__XXL": {
+      "productId": "white-supporters-jersey",
+      "productName": "White supporters jersey",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 3,
+      "countedQty": null
+    },
+    "white-supporters-jersey__w": {
+      "productId": "white-supporters-jersey",
+      "productName": "White supporters jersey",
+      "size": "w",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "black-sport-shorts__S": {
+      "productId": "black-sport-shorts",
+      "productName": "Black sport shorts",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "black-sport-shorts__M": {
+      "productId": "black-sport-shorts",
+      "productName": "Black sport shorts",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "black-sport-shorts__L": {
+      "productId": "black-sport-shorts",
+      "productName": "Black sport shorts",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 4,
+      "countedQty": null
+    },
+    "black-sport-shorts__XL": {
+      "productId": "black-sport-shorts",
+      "productName": "Black sport shorts",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "black-sport-shorts__XXL": {
+      "productId": "black-sport-shorts",
+      "productName": "Black sport shorts",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 1,
+      "countedQty": null
+    },
+    "white-sport-shorts__S": {
+      "productId": "white-sport-shorts",
+      "productName": "White sport shorts",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-sport-shorts__M": {
+      "productId": "white-sport-shorts",
+      "productName": "White sport shorts",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-sport-shorts__L": {
+      "productId": "white-sport-shorts",
+      "productName": "White sport shorts",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-sport-shorts__XL": {
+      "productId": "white-sport-shorts",
+      "productName": "White sport shorts",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-sport-shorts__XXL": {
+      "productId": "white-sport-shorts",
+      "productName": "White sport shorts",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "quarter-zip__S": {
+      "productId": "quarter-zip",
+      "productName": "1/4 Zip",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 2,
+      "countedQty": null
+    },
+    "quarter-zip__M": {
+      "productId": "quarter-zip",
+      "productName": "1/4 Zip",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 2,
+      "countedQty": null
+    },
+    "quarter-zip__L": {
+      "productId": "quarter-zip",
+      "productName": "1/4 Zip",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 1,
+      "countedQty": null
+    },
+    "quarter-zip__XL": {
+      "productId": "quarter-zip",
+      "productName": "1/4 Zip",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "quarter-zip__XXL": {
+      "productId": "quarter-zip",
+      "productName": "1/4 Zip",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 1,
+      "countedQty": null
+    },
+    "windbreaker__S": {
+      "productId": "windbreaker",
+      "productName": "Windbreaker",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 1,
+      "countedQty": null
+    },
+    "windbreaker__M": {
+      "productId": "windbreaker",
+      "productName": "Windbreaker",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 3,
+      "countedQty": null
+    },
+    "windbreaker__L": {
+      "productId": "windbreaker",
+      "productName": "Windbreaker",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 2,
+      "countedQty": null
+    },
+    "windbreaker__XL": {
+      "productId": "windbreaker",
+      "productName": "Windbreaker",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "windbreaker__XXL": {
+      "productId": "windbreaker",
+      "productName": "Windbreaker",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 1,
+      "countedQty": null
+    },
+    "socks__5-6": {
+      "productId": "socks",
+      "productName": "Socks",
+      "size": "5-6",
+      "openingQty": 0,
+      "arrivedQty": 8,
+      "countedQty": null
+    },
+    "socks__7-8": {
+      "productId": "socks",
+      "productName": "Socks",
+      "size": "7-8",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "socks__9-10": {
+      "productId": "socks",
+      "productName": "Socks",
+      "size": "9-10",
+      "openingQty": 0,
+      "arrivedQty": 9,
+      "countedQty": null
+    },
+    "socks__11-12": {
+      "productId": "socks",
+      "productName": "Socks",
+      "size": "11-12",
+      "openingQty": 0,
+      "arrivedQty": 14,
+      "countedQty": null
+    },
+    "socks__13-14": {
+      "productId": "socks",
+      "productName": "Socks",
+      "size": "13-14",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rain-jackets__S": {
+      "productId": "rain-jackets",
+      "productName": "Rain Jackets",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rain-jackets__M": {
+      "productId": "rain-jackets",
+      "productName": "Rain Jackets",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rain-jackets__L": {
+      "productId": "rain-jackets",
+      "productName": "Rain Jackets",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rain-jackets__XL": {
+      "productId": "rain-jackets",
+      "productName": "Rain Jackets",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rain-jackets__XXL": {
+      "productId": "rain-jackets",
+      "productName": "Rain Jackets",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rain-jackets__XXXL": {
+      "productId": "rain-jackets",
+      "productName": "Rain Jackets",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-underwear__S": {
+      "productId": "hm-underwear",
+      "productName": "HM underwear",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-underwear__M": {
+      "productId": "hm-underwear",
+      "productName": "HM underwear",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-underwear__L": {
+      "productId": "hm-underwear",
+      "productName": "HM underwear",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-underwear__XL": {
+      "productId": "hm-underwear",
+      "productName": "HM underwear",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-underwear__XXL": {
+      "productId": "hm-underwear",
+      "productName": "HM underwear",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-pullover__S": {
+      "productId": "80th-year-pullover",
+      "productName": "80th Year Pullover",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-pullover__M": {
+      "productId": "80th-year-pullover",
+      "productName": "80th Year Pullover",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-pullover__L": {
+      "productId": "80th-year-pullover",
+      "productName": "80th Year Pullover",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-pullover__XL": {
+      "productId": "80th-year-pullover",
+      "productName": "80th Year Pullover",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-pullover__XXL": {
+      "productId": "80th-year-pullover",
+      "productName": "80th Year Pullover",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-pullover__XXXL": {
+      "productId": "80th-year-pullover",
+      "productName": "80th Year Pullover",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "dress-shirt__S": {
+      "productId": "dress-shirt",
+      "productName": "Dress shirt",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "dress-shirt__M": {
+      "productId": "dress-shirt",
+      "productName": "Dress shirt",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "dress-shirt__L": {
+      "productId": "dress-shirt",
+      "productName": "Dress shirt",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "dress-shirt__XL": {
+      "productId": "dress-shirt",
+      "productName": "Dress shirt",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "dress-shirt__XXL": {
+      "productId": "dress-shirt",
+      "productName": "Dress shirt",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "dress-shirt__XXXL": {
+      "productId": "dress-shirt",
+      "productName": "Dress shirt",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-hat__S": {
+      "productId": "80th-year-hat",
+      "productName": "80th Year hat",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-hat__M": {
+      "productId": "80th-year-hat",
+      "productName": "80th Year hat",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-hat__L": {
+      "productId": "80th-year-hat",
+      "productName": "80th Year hat",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-hat__XL": {
+      "productId": "80th-year-hat",
+      "productName": "80th Year hat",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-hat__XXL": {
+      "productId": "80th-year-hat",
+      "productName": "80th Year hat",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-year-hat__XXXL": {
+      "productId": "80th-year-hat",
+      "productName": "80th Year hat",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-rugby-jersey__S": {
+      "productId": "80th-rugby-jersey",
+      "productName": "80th Rugby jersey",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-rugby-jersey__M": {
+      "productId": "80th-rugby-jersey",
+      "productName": "80th Rugby jersey",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-rugby-jersey__L": {
+      "productId": "80th-rugby-jersey",
+      "productName": "80th Rugby jersey",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-rugby-jersey__XL": {
+      "productId": "80th-rugby-jersey",
+      "productName": "80th Rugby jersey",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-rugby-jersey__XXL": {
+      "productId": "80th-rugby-jersey",
+      "productName": "80th Rugby jersey",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "80th-rugby-jersey__XXXL": {
+      "productId": "80th-rugby-jersey",
+      "productName": "80th Rugby jersey",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-80-years-t-shirt__S": {
+      "productId": "hm-80-years-t-shirt",
+      "productName": "HM 80 Years T-shirt",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-80-years-t-shirt__M": {
+      "productId": "hm-80-years-t-shirt",
+      "productName": "HM 80 Years T-shirt",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-80-years-t-shirt__L": {
+      "productId": "hm-80-years-t-shirt",
+      "productName": "HM 80 Years T-shirt",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-80-years-t-shirt__XL": {
+      "productId": "hm-80-years-t-shirt",
+      "productName": "HM 80 Years T-shirt",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-80-years-t-shirt__XXL": {
+      "productId": "hm-80-years-t-shirt",
+      "productName": "HM 80 Years T-shirt",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "hm-80-years-t-shirt__XXXL": {
+      "productId": "hm-80-years-t-shirt",
+      "productName": "HM 80 Years T-shirt",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-t-shirt-no-6__S": {
+      "productId": "white-t-shirt-no-6",
+      "productName": "White T-shirt (No. 6 / house print)",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-t-shirt-no-6__M": {
+      "productId": "white-t-shirt-no-6",
+      "productName": "White T-shirt (No. 6 / house print)",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-t-shirt-no-6__L": {
+      "productId": "white-t-shirt-no-6",
+      "productName": "White T-shirt (No. 6 / house print)",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-t-shirt-no-6__XL": {
+      "productId": "white-t-shirt-no-6",
+      "productName": "White T-shirt (No. 6 / house print)",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-t-shirt-no-6__XXL": {
+      "productId": "white-t-shirt-no-6",
+      "productName": "White T-shirt (No. 6 / house print)",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "white-t-shirt-no-6__XXXL": {
+      "productId": "white-t-shirt-no-6",
+      "productName": "White T-shirt (No. 6 / house print)",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "alumni-cap__S": {
+      "productId": "alumni-cap",
+      "productName": "Alumni cap",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "alumni-cap__M": {
+      "productId": "alumni-cap",
+      "productName": "Alumni cap",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "alumni-cap__L": {
+      "productId": "alumni-cap",
+      "productName": "Alumni cap",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "alumni-cap__XL": {
+      "productId": "alumni-cap",
+      "productName": "Alumni cap",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "alumni-cap__XXL": {
+      "productId": "alumni-cap",
+      "productName": "Alumni cap",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "alumni-cap__XXXL": {
+      "productId": "alumni-cap",
+      "productName": "Alumni cap",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "first-years-shirt__S": {
+      "productId": "first-years-shirt",
+      "productName": "First Years shirt",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "first-years-shirt__M": {
+      "productId": "first-years-shirt",
+      "productName": "First Years shirt",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "first-years-shirt__L": {
+      "productId": "first-years-shirt",
+      "productName": "First Years shirt",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "first-years-shirt__XL": {
+      "productId": "first-years-shirt",
+      "productName": "First Years shirt",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "first-years-shirt__XXL": {
+      "productId": "first-years-shirt",
+      "productName": "First Years shirt",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "first-years-shirt__XXXL": {
+      "productId": "first-years-shirt",
+      "productName": "First Years shirt",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "newcomers-caps__One size": {
+      "productId": "newcomers-caps",
+      "productName": "Newcomers caps",
+      "size": "One size",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "vintage-polo-shirt__S": {
+      "productId": "vintage-polo-shirt",
+      "productName": "Vintage polo shirt",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "vintage-polo-shirt__M": {
+      "productId": "vintage-polo-shirt",
+      "productName": "Vintage polo shirt",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "vintage-polo-shirt__L": {
+      "productId": "vintage-polo-shirt",
+      "productName": "Vintage polo shirt",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "vintage-polo-shirt__XL": {
+      "productId": "vintage-polo-shirt",
+      "productName": "Vintage polo shirt",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "vintage-polo-shirt__XXL": {
+      "productId": "vintage-polo-shirt",
+      "productName": "Vintage polo shirt",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "vintage-polo-shirt__XXXL": {
+      "productId": "vintage-polo-shirt",
+      "productName": "Vintage polo shirt",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-yellow__S": {
+      "productId": "rugby-jersey-green-yellow",
+      "productName": "Rugby jersey (green & yellow)",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-yellow__M": {
+      "productId": "rugby-jersey-green-yellow",
+      "productName": "Rugby jersey (green & yellow)",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-yellow__L": {
+      "productId": "rugby-jersey-green-yellow",
+      "productName": "Rugby jersey (green & yellow)",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-yellow__XL": {
+      "productId": "rugby-jersey-green-yellow",
+      "productName": "Rugby jersey (green & yellow)",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-yellow__XXL": {
+      "productId": "rugby-jersey-green-yellow",
+      "productName": "Rugby jersey (green & yellow)",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-yellow__XXXL": {
+      "productId": "rugby-jersey-green-yellow",
+      "productName": "Rugby jersey (green & yellow)",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-white__S": {
+      "productId": "rugby-jersey-green-white",
+      "productName": "Rugby jersey (green & white)",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-white__M": {
+      "productId": "rugby-jersey-green-white",
+      "productName": "Rugby jersey (green & white)",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-white__L": {
+      "productId": "rugby-jersey-green-white",
+      "productName": "Rugby jersey (green & white)",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-white__XL": {
+      "productId": "rugby-jersey-green-white",
+      "productName": "Rugby jersey (green & white)",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-white__XXL": {
+      "productId": "rugby-jersey-green-white",
+      "productName": "Rugby jersey (green & white)",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "rugby-jersey-green-white__XXXL": {
+      "productId": "rugby-jersey-green-white",
+      "productName": "Rugby jersey (green & white)",
+      "size": "XXXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "grey-hoodie__S": {
+      "productId": "grey-hoodie",
+      "productName": "Grey hoodie",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 2,
+      "countedQty": null
+    },
+    "grey-hoodie__M": {
+      "productId": "grey-hoodie",
+      "productName": "Grey hoodie",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 4,
+      "countedQty": null
+    },
+    "grey-hoodie__L": {
+      "productId": "grey-hoodie",
+      "productName": "Grey hoodie",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 2,
+      "countedQty": null
+    },
+    "grey-hoodie__XL": {
+      "productId": "grey-hoodie",
+      "productName": "Grey hoodie",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "grey-hoodie__XXL": {
+      "productId": "grey-hoodie",
+      "productName": "Grey hoodie",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "2025-dotted-golf-shirt__S": {
+      "productId": "2025-dotted-golf-shirt",
+      "productName": "2025 dotted golf shirt",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "2025-dotted-golf-shirt__M": {
+      "productId": "2025-dotted-golf-shirt",
+      "productName": "2025 dotted golf shirt",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "2025-dotted-golf-shirt__L": {
+      "productId": "2025-dotted-golf-shirt",
+      "productName": "2025 dotted golf shirt",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "2025-dotted-golf-shirt__XL": {
+      "productId": "2025-dotted-golf-shirt",
+      "productName": "2025 dotted golf shirt",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "2025-dotted-golf-shirt__XXL": {
+      "productId": "2025-dotted-golf-shirt",
+      "productName": "2025 dotted golf shirt",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 6,
+      "countedQty": null
+    },
+    "2026-tamaties-sponsor-golf-shirt__S": {
+      "productId": "2026-tamaties-sponsor-golf-shirt",
+      "productName": "2026 Tamaties sponsor Golf Shirt",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 1,
+      "countedQty": null
+    },
+    "2026-tamaties-sponsor-golf-shirt__M": {
+      "productId": "2026-tamaties-sponsor-golf-shirt",
+      "productName": "2026 Tamaties sponsor Golf Shirt",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 4,
+      "countedQty": null
+    },
+    "2026-tamaties-sponsor-golf-shirt__L": {
+      "productId": "2026-tamaties-sponsor-golf-shirt",
+      "productName": "2026 Tamaties sponsor Golf Shirt",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 7,
+      "countedQty": null
+    },
+    "2026-tamaties-sponsor-golf-shirt__XL": {
+      "productId": "2026-tamaties-sponsor-golf-shirt",
+      "productName": "2026 Tamaties sponsor Golf Shirt",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 5,
+      "countedQty": null
+    },
+    "2026-tamaties-sponsor-golf-shirt__XXL": {
+      "productId": "2026-tamaties-sponsor-golf-shirt",
+      "productName": "2026 Tamaties sponsor Golf Shirt",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 2,
+      "countedQty": null
+    }
+  },
+  "sales": [],
+  "arrivals": [
+    {
+      "id": "arr_1791383274894",
+      "date": "2026-10-07",
+      "productId": "2026-tamaties-sponsor-golf-shirt",
+      "productName": "2026 Tamaties sponsor Golf Shirt",
+      "sizeBreakdown": {
+        "S": 1,
+        "M": 4,
+        "L": 7,
+        "XL": 5,
+        "XXL": 2
+      },
+      "totalUnits": 19,
+      "notes": ""
+    },
+    {
+      "id": "arr_1791382967689",
+      "date": "2026-10-07",
+      "productId": "2025-dotted-golf-shirt",
+      "productName": "2025 dotted golf shirt",
+      "sizeBreakdown": {
+        "XXL": 6
+      },
+      "totalUnits": 6,
+      "notes": ""
+    },
+    {
+      "id": "arr_1791382946797",
+      "date": "2026-10-07",
+      "productId": "black-sport-shorts",
+      "productName": "Black sport shorts",
+      "sizeBreakdown": {
+        "XXL": 1
+      },
+      "totalUnits": 1,
+      "notes": ""
+    },
+    {
+      "id": "arr_1791382532921",
+      "date": "2026-10-07",
+      "productId": "white-supporters-jersey",
+      "productName": "White supporters jersey",
+      "sizeBreakdown": {
+        "M": 4,
+        "L": 3,
+        "XL": 4,
+        "XXL": 3
+      },
+      "totalUnits": 14,
+      "notes": ""
+    },
+    {
+      "id": "arr_1791382374761",
+      "date": "2026-10-07",
+      "productId": "black-sport-shorts",
+      "productName": "Black sport shorts",
+      "sizeBreakdown": {
+        "L": 4
+      },
+      "totalUnits": 4,
+      "notes": ""
+    },
+    {
+      "id": "arr_1791382354341",
+      "date": "2026-10-07",
+      "productId": "socks",
+      "productName": "Socks",
+      "sizeBreakdown": {
+        "5-6": 8,
+        "9-10": 9,
+        "11-12": 14
+      },
+      "totalUnits": 31,
+      "notes": ""
+    },
+    {
+      "id": "arr_1791382138380",
+      "date": "2026-10-07",
+      "productId": "windbreaker",
+      "productName": "Windbreaker",
+      "sizeBreakdown": {
+        "S": 1,
+        "M": 3,
+        "L": 2,
+        "XXL": 1
+      },
+      "totalUnits": 7,
+      "notes": ""
+    },
+    {
+      "id": "arr_1791381046315",
+      "date": "2026-10-07",
+      "productId": "quarter-zip",
+      "productName": "1/4 Zip",
+      "sizeBreakdown": {
+        "S": 2,
+        "M": 2,
+        "L": 1,
+        "XXL": 1
+      },
+      "totalUnits": 6,
+      "notes": ""
+    },
+    {
+      "id": "arr_1791380861360",
+      "date": "2026-10-07",
+      "productId": "grey-hoodie",
+      "productName": "Grey hoodie",
+      "sizeBreakdown": {
+        "S": 2,
+        "M": 4,
+        "L": 2
+      },
+      "totalUnits": 8,
+      "notes": ""
+    }
+  ]
+}

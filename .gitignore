@@ -1,0 +1,4 @@
+node_modules/
+cloudflared.exe
+temp_pptx*
+*.log
