@@ -365,40 +365,6 @@
         "XXL"
       ],
       "defaultEst": {}
-    },
-    {
-      "id": "2025-dotted-golf-shirt",
-      "name": "2025 dotted golf shirt",
-      "category": "Tops",
-      "colour": "white and green dots",
-      "costPrice": 0,
-      "costPriceVat": 0,
-      "sellingPrice": 300,
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "defaultEst": {}
-    },
-    {
-      "id": "2026-tamaties-sponsor-golf-shirt",
-      "name": "2026 Tamaties sponsor Golf Shirt",
-      "category": "Tops",
-      "colour": "white",
-      "costPrice": 0,
-      "costPriceVat": 0,
-      "sellingPrice": 300,
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "defaultEst": {}
     }
   ],
   "inventory": {
@@ -1313,116 +1279,10 @@
       "openingQty": 0,
       "arrivedQty": 0,
       "countedQty": null
-    },
-    "2025-dotted-golf-shirt__S": {
-      "productId": "2025-dotted-golf-shirt",
-      "productName": "2025 dotted golf shirt",
-      "size": "S",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "2025-dotted-golf-shirt__M": {
-      "productId": "2025-dotted-golf-shirt",
-      "productName": "2025 dotted golf shirt",
-      "size": "M",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "2025-dotted-golf-shirt__L": {
-      "productId": "2025-dotted-golf-shirt",
-      "productName": "2025 dotted golf shirt",
-      "size": "L",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "2025-dotted-golf-shirt__XL": {
-      "productId": "2025-dotted-golf-shirt",
-      "productName": "2025 dotted golf shirt",
-      "size": "XL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "2025-dotted-golf-shirt__XXL": {
-      "productId": "2025-dotted-golf-shirt",
-      "productName": "2025 dotted golf shirt",
-      "size": "XXL",
-      "openingQty": 0,
-      "arrivedQty": 6,
-      "countedQty": null
-    },
-    "2026-tamaties-sponsor-golf-shirt__S": {
-      "productId": "2026-tamaties-sponsor-golf-shirt",
-      "productName": "2026 Tamaties sponsor Golf Shirt",
-      "size": "S",
-      "openingQty": 0,
-      "arrivedQty": 1,
-      "countedQty": null
-    },
-    "2026-tamaties-sponsor-golf-shirt__M": {
-      "productId": "2026-tamaties-sponsor-golf-shirt",
-      "productName": "2026 Tamaties sponsor Golf Shirt",
-      "size": "M",
-      "openingQty": 0,
-      "arrivedQty": 4,
-      "countedQty": null
-    },
-    "2026-tamaties-sponsor-golf-shirt__L": {
-      "productId": "2026-tamaties-sponsor-golf-shirt",
-      "productName": "2026 Tamaties sponsor Golf Shirt",
-      "size": "L",
-      "openingQty": 0,
-      "arrivedQty": 7,
-      "countedQty": null
-    },
-    "2026-tamaties-sponsor-golf-shirt__XL": {
-      "productId": "2026-tamaties-sponsor-golf-shirt",
-      "productName": "2026 Tamaties sponsor Golf Shirt",
-      "size": "XL",
-      "openingQty": 0,
-      "arrivedQty": 5,
-      "countedQty": null
-    },
-    "2026-tamaties-sponsor-golf-shirt__XXL": {
-      "productId": "2026-tamaties-sponsor-golf-shirt",
-      "productName": "2026 Tamaties sponsor Golf Shirt",
-      "size": "XXL",
-      "openingQty": 0,
-      "arrivedQty": 2,
-      "countedQty": null
     }
   },
   "sales": [],
   "arrivals": [
-    {
-      "id": "arr_1791383274894",
-      "date": "2026-10-07",
-      "productId": "2026-tamaties-sponsor-golf-shirt",
-      "productName": "2026 Tamaties sponsor Golf Shirt",
-      "sizeBreakdown": {
-        "S": 1,
-        "M": 4,
-        "L": 7,
-        "XL": 5,
-        "XXL": 2
-      },
-      "totalUnits": 19,
-      "notes": ""
-    },
-    {
-      "id": "arr_1791382967689",
-      "date": "2026-10-07",
-      "productId": "2025-dotted-golf-shirt",
-      "productName": "2025 dotted golf shirt",
-      "sizeBreakdown": {
-        "XXL": 6
-      },
-      "totalUnits": 6,
-      "notes": ""
-    },
     {
       "id": "arr_1791382946797",
       "date": "2026-10-07",
