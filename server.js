@@ -10,13 +10,14 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 // Support both nested folders (local) and flat file layout (cloud upload)
-// { index: false } prevents accidental public exposure of index.html at root
-app.use(express.static(path.join(__dirname, 'public'), { index: false }));
-app.use(express.static(__dirname, { index: false }));
-app.use('/images/merch', express.static(path.join(__dirname, 'public', 'images', 'merch')));
-app.use('/images/merch', express.static(__dirname));
-app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
-app.use('/images', express.static(__dirname));
+// { dotfiles: 'allow' } is required on Windows when parent paths contain leading dots (e.g. .gemini)
+const staticOptions = { dotfiles: 'allow', index: false };
+app.use(express.static(path.join(__dirname, 'public'), staticOptions));
+app.use(express.static(__dirname, staticOptions));
+app.use('/images/merch', express.static(path.join(__dirname, 'public', 'images', 'merch'), { dotfiles: 'allow' }));
+app.use('/images/merch', express.static(__dirname, { dotfiles: 'allow' }));
+app.use('/images', express.static(path.join(__dirname, 'public', 'images'), { dotfiles: 'allow' }));
+app.use('/images', express.static(__dirname, { dotfiles: 'allow' }));
 
 const DATA_DIR = fs.existsSync(path.join(__dirname, 'data')) ? path.join(__dirname, 'data') : __dirname;
 const STORE_FILE = fs.existsSync(path.join(DATA_DIR, 'store.json')) 
@@ -31,11 +32,21 @@ if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
+// Robust HTML sender that bypasses path dotfile restrictions
+function sendHtml(res, filePath) {
+  if (fs.existsSync(filePath)) {
+    res.type('html').send(fs.readFileSync(filePath, 'utf-8'));
+  } else {
+    res.status(404).send('Page not found');
+  }
+}
+
 // DEFAULT STOREFRONT FOR RESIDENTS: Root (/) serves the student catalog (NO profits/costs)
 app.get('/', (req, res) => {
-  const localCatalog = path.join(__dirname, 'public', 'catalog.html');
-  if (fs.existsSync(localCatalog)) return res.sendFile(localCatalog);
-  return res.sendFile(path.join(__dirname, 'catalog.html'));
+  const p = fs.existsSync(path.join(__dirname, 'public', 'catalog.html'))
+    ? path.join(__dirname, 'public', 'catalog.html')
+    : path.join(__dirname, 'catalog.html');
+  sendHtml(res, p);
 });
 
 // Initialize store if not present
@@ -76,9 +87,52 @@ function getStore() {
   return JSON.parse(fs.readFileSync(STORE_FILE, 'utf-8'));
 }
 
+const SYNC_SECRET = 'hm-merch-2026-sync-token';
+const RENDER_PUBLIC_URL = 'https://huis-marais-merch.onrender.com';
+
+async function pushToLiveCloud(store) {
+  try {
+    const payload = {
+      products: store.products,
+      inventory: store.inventory
+    };
+    const res = await fetch(`${RENDER_PUBLIC_URL}/api/cloud-sync`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-sync-token': SYNC_SECRET
+      },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(10000)
+    });
+    if (res.ok) {
+      console.log('[LIVE SYNC] Successfully updated live student site at https://huis-marais-merch.onrender.com');
+      return { success: true };
+    } else {
+      console.warn('[LIVE SYNC] Render responded with status:', res.status);
+      return { success: false, status: res.status };
+    }
+  } catch (err) {
+    console.warn('[LIVE SYNC] Live site push deferred (host may be sleeping):', err.message);
+    return { success: false, error: err.message };
+  }
+}
+
 function saveStore(store) {
   const jsonContent = JSON.stringify(store, null, 2);
   fs.writeFileSync(STORE_FILE, jsonContent);
+
+  // Keep both root and data/store.json in sync
+  try {
+    const rootStore = path.join(__dirname, 'store.json');
+    const dataStore = path.join(__dirname, 'data', 'store.json');
+    if (STORE_FILE !== rootStore && fs.existsSync(rootStore)) {
+      fs.writeFileSync(rootStore, jsonContent);
+    }
+    if (STORE_FILE !== dataStore && fs.existsSync(dataStore)) {
+      fs.writeFileSync(dataStore, jsonContent);
+    }
+  } catch (e) {}
 
   // Automatic backup safeguard
   try {
@@ -88,6 +142,11 @@ function saveStore(store) {
     fs.writeFileSync(backupFile, jsonContent);
   } catch (e) {
     console.error('Backup error:', e);
+  }
+
+  // Push to Render cloud live site in background if running locally
+  if (!process.env.RENDER) {
+    pushToLiveCloud(store).catch(() => {});
   }
 }
 
@@ -186,22 +245,32 @@ function calculateMetrics(store) {
 
 // GET Full State
 app.get('/catalog', (req, res) => {
-  const localCatalog = path.join(__dirname, 'public', 'catalog.html');
-  if (fs.existsSync(localCatalog)) return res.sendFile(localCatalog);
-  return res.sendFile(path.join(__dirname, 'catalog.html'));
+  const p = fs.existsSync(path.join(__dirname, 'public', 'catalog.html'))
+    ? path.join(__dirname, 'public', 'catalog.html')
+    : path.join(__dirname, 'catalog.html');
+  sendHtml(res, p);
 });
 
 app.get('/catalog.html', (req, res) => {
-  const localCatalog = path.join(__dirname, 'public', 'catalog.html');
-  if (fs.existsSync(localCatalog)) return res.sendFile(localCatalog);
-  return res.sendFile(path.join(__dirname, 'catalog.html'));
+  const p = fs.existsSync(path.join(__dirname, 'public', 'catalog.html'))
+    ? path.join(__dirname, 'public', 'catalog.html')
+    : path.join(__dirname, 'catalog.html');
+  sendHtml(res, p);
 });
 
 // PRIVATE ADMIN PORTAL (Only for Izak to manage sales/stock)
 app.get('/admin', (req, res) => {
-  const localIndex = path.join(__dirname, 'public', 'index.html');
-  if (fs.existsSync(localIndex)) return res.sendFile(localIndex);
-  return res.sendFile(path.join(__dirname, 'index.html'));
+  const p = fs.existsSync(path.join(__dirname, 'public', 'index.html'))
+    ? path.join(__dirname, 'public', 'index.html')
+    : path.join(__dirname, 'index.html');
+  sendHtml(res, p);
+});
+
+app.get('/admin.html', (req, res) => {
+  const p = fs.existsSync(path.join(__dirname, 'public', 'index.html'))
+    ? path.join(__dirname, 'public', 'index.html')
+    : path.join(__dirname, 'index.html');
+  sendHtml(res, p);
 });
 
 // If anyone visits index.html directly, redirect them to the safe resident catalog
@@ -241,14 +310,10 @@ app.get('/api/public-catalog', (req, res) => {
       'dress-shirt': '/dress-shirt.jpeg',
       '80th-year-hat': '/80th-year-hat.jpeg',
       '80th-rugby-jersey': '/80th-rugby-jersey.jpeg',
-      'hm-80-years-t-shirt': '/hm-80-years-t-shirt.jpeg',
       'white-t-shirt-no-6': '/white-t-shirt-no-6.jpeg',
       'alumni-cap': '/alumni-cap.jpeg',
-      'first-years-shirt': '/first-years-shirt.jpeg',
       'newcomers-caps': '/newcomers-caps.png',
-      'vintage-polo-shirt': '/vintage-polo-shirt.jpeg',
-      'rugby-jersey-green-yellow': '/rugby-jersey-green-yellow.jpeg',
-      'rugby-jersey-green-white': '/rugby-jersey-green-white.jpeg'
+      'rugby-jersey-green-yellow': '/rugby-jersey-green-yellow.jpeg'
     };
 
     const publicCatalog = store.products.map(p => {
@@ -276,6 +341,86 @@ app.get('/api/public-catalog', (req, res) => {
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
+  }
+});
+
+// POST Cloud Sync (Receives real-time updates on Render from Izak's local portal)
+app.post('/api/cloud-sync', (req, res) => {
+  try {
+    const token = req.headers['x-sync-token'];
+    if (token !== SYNC_SECRET) {
+      return res.status(401).json({ error: 'Unauthorized: invalid sync token' });
+    }
+
+    const { products, inventory } = req.body;
+    if (!products || !inventory) {
+      return res.status(400).json({ error: 'Invalid payload: products and inventory required' });
+    }
+
+    const currentStore = getStore();
+    currentStore.products = products;
+    currentStore.inventory = inventory;
+
+    // Save to disk
+    const jsonContent = JSON.stringify(currentStore, null, 2);
+    fs.writeFileSync(STORE_FILE, jsonContent);
+
+    // Keep root store.json in sync as well
+    try {
+      const rootStore = path.join(__dirname, 'store.json');
+      if (STORE_FILE !== rootStore) fs.writeFileSync(rootStore, jsonContent);
+    } catch (e) {}
+
+    console.log(`[CLOUD SYNC] Updated live catalog with ${products.length} products at ${new Date().toISOString()}`);
+    res.json({ success: true, message: 'Live catalog updated', productCount: products.length });
+  } catch (err) {
+    console.error('[CLOUD SYNC ERROR]', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST Trigger Manual Cloud Sync from local Admin Portal
+app.post('/api/trigger-sync', async (req, res) => {
+  try {
+    const store = getStore();
+    const result = await pushToLiveCloud(store);
+    res.json(result);
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// GET Check if Live Cloud Site is in sync with Local
+app.get('/api/check-cloud-sync', async (req, res) => {
+  try {
+    const localStore = getStore();
+    const liveResponse = await fetch(`${RENDER_PUBLIC_URL}/api/public-catalog`, {
+      signal: AbortSignal.timeout(6000)
+    });
+    if (!liveResponse.ok) {
+      return res.json({ inSync: false, status: 'error', message: 'Could not fetch live catalog' });
+    }
+    const liveCatalog = await liveResponse.json();
+    const liveItems = liveCatalog.items || [];
+    
+    // Check product count and sample price
+    const countMatch = liveItems.length === localStore.products.length;
+    const localSupporters = localStore.products.find(p => p.id === 'white-supporters-jersey');
+    const liveSupporters = liveItems.find(p => p.id === 'white-supporters-jersey');
+    const priceMatch = localSupporters && liveSupporters && (localSupporters.sellingPrice === liveSupporters.sellingPrice);
+
+    const inSync = countMatch && priceMatch;
+
+    res.json({
+      inSync,
+      localProductCount: localStore.products.length,
+      liveProductCount: liveItems.length,
+      localJerseyPrice: localSupporters ? localSupporters.sellingPrice : null,
+      liveJerseyPrice: liveSupporters ? liveSupporters.sellingPrice : null,
+      liveUrl: RENDER_PUBLIC_URL
+    });
+  } catch (err) {
+    res.json({ inSync: false, status: 'offline', message: err.message });
   }
 });
 

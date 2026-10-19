@@ -6,8 +6,8 @@
       "category": "Jerseys",
       "colour": "White",
       "costPrice": 590,
-      "costPriceVat": 678.5,
-      "sellingPrice": 700,
+      "costPriceVat": 0,
+      "sellingPrice": 750,
       "sizes": [
         "S",
         "M",
@@ -211,24 +211,6 @@
       "defaultEst": {}
     },
     {
-      "id": "hm-80-years-t-shirt",
-      "name": "HM 80 Years T-shirt",
-      "category": "T-Shirts",
-      "colour": "Green",
-      "costPrice": 0,
-      "costPriceVat": 0,
-      "sellingPrice": 0,
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ],
-      "defaultEst": {}
-    },
-    {
       "id": "white-t-shirt-no-6",
       "name": "White T-shirt (No. 6 / house print)",
       "category": "T-Shirts",
@@ -265,24 +247,6 @@
       "defaultEst": {}
     },
     {
-      "id": "first-years-shirt",
-      "name": "First Years shirt",
-      "category": "Shirts",
-      "colour": "Green, yellow trim",
-      "costPrice": 0,
-      "costPriceVat": 0,
-      "sellingPrice": 0,
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ],
-      "defaultEst": {}
-    },
-    {
       "id": "newcomers-caps",
       "name": "Newcomers caps",
       "category": "Headwear",
@@ -296,46 +260,10 @@
       "defaultEst": {}
     },
     {
-      "id": "vintage-polo-shirt",
-      "name": "Vintage polo shirt",
-      "category": "Shirts",
-      "colour": "Green, yellow stripes",
-      "costPrice": 0,
-      "costPriceVat": 0,
-      "sellingPrice": 0,
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ],
-      "defaultEst": {}
-    },
-    {
       "id": "rugby-jersey-green-yellow",
       "name": "Rugby jersey (green & yellow)",
       "category": "Jerseys",
       "colour": "Green, yellow side panels",
-      "costPrice": 0,
-      "costPriceVat": 0,
-      "sellingPrice": 0,
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "XXXL"
-      ],
-      "defaultEst": {}
-    },
-    {
-      "id": "rugby-jersey-green-white",
-      "name": "Rugby jersey (green & white)",
-      "category": "Jerseys",
-      "colour": "Green, white & yellow side panels",
       "costPrice": 0,
       "costPriceVat": 0,
       "sellingPrice": 0,
@@ -896,54 +824,6 @@
       "arrivedQty": 0,
       "countedQty": null
     },
-    "hm-80-years-t-shirt__S": {
-      "productId": "hm-80-years-t-shirt",
-      "productName": "HM 80 Years T-shirt",
-      "size": "S",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "hm-80-years-t-shirt__M": {
-      "productId": "hm-80-years-t-shirt",
-      "productName": "HM 80 Years T-shirt",
-      "size": "M",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "hm-80-years-t-shirt__L": {
-      "productId": "hm-80-years-t-shirt",
-      "productName": "HM 80 Years T-shirt",
-      "size": "L",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "hm-80-years-t-shirt__XL": {
-      "productId": "hm-80-years-t-shirt",
-      "productName": "HM 80 Years T-shirt",
-      "size": "XL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "hm-80-years-t-shirt__XXL": {
-      "productId": "hm-80-years-t-shirt",
-      "productName": "HM 80 Years T-shirt",
-      "size": "XXL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "hm-80-years-t-shirt__XXXL": {
-      "productId": "hm-80-years-t-shirt",
-      "productName": "HM 80 Years T-shirt",
-      "size": "XXXL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
     "white-t-shirt-no-6__S": {
       "productId": "white-t-shirt-no-6",
       "productName": "White T-shirt (No. 6 / house print)",
@@ -1040,106 +920,10 @@
       "arrivedQty": 0,
       "countedQty": null
     },
-    "first-years-shirt__S": {
-      "productId": "first-years-shirt",
-      "productName": "First Years shirt",
-      "size": "S",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "first-years-shirt__M": {
-      "productId": "first-years-shirt",
-      "productName": "First Years shirt",
-      "size": "M",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "first-years-shirt__L": {
-      "productId": "first-years-shirt",
-      "productName": "First Years shirt",
-      "size": "L",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "first-years-shirt__XL": {
-      "productId": "first-years-shirt",
-      "productName": "First Years shirt",
-      "size": "XL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "first-years-shirt__XXL": {
-      "productId": "first-years-shirt",
-      "productName": "First Years shirt",
-      "size": "XXL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "first-years-shirt__XXXL": {
-      "productId": "first-years-shirt",
-      "productName": "First Years shirt",
-      "size": "XXXL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
     "newcomers-caps__One size": {
       "productId": "newcomers-caps",
       "productName": "Newcomers caps",
       "size": "One size",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "vintage-polo-shirt__S": {
-      "productId": "vintage-polo-shirt",
-      "productName": "Vintage polo shirt",
-      "size": "S",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "vintage-polo-shirt__M": {
-      "productId": "vintage-polo-shirt",
-      "productName": "Vintage polo shirt",
-      "size": "M",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "vintage-polo-shirt__L": {
-      "productId": "vintage-polo-shirt",
-      "productName": "Vintage polo shirt",
-      "size": "L",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "vintage-polo-shirt__XL": {
-      "productId": "vintage-polo-shirt",
-      "productName": "Vintage polo shirt",
-      "size": "XL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "vintage-polo-shirt__XXL": {
-      "productId": "vintage-polo-shirt",
-      "productName": "Vintage polo shirt",
-      "size": "XXL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "vintage-polo-shirt__XXXL": {
-      "productId": "vintage-polo-shirt",
-      "productName": "Vintage polo shirt",
-      "size": "XXXL",
       "openingQty": 0,
       "arrivedQty": 0,
       "countedQty": null
@@ -1187,54 +971,6 @@
     "rugby-jersey-green-yellow__XXXL": {
       "productId": "rugby-jersey-green-yellow",
       "productName": "Rugby jersey (green & yellow)",
-      "size": "XXXL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "rugby-jersey-green-white__S": {
-      "productId": "rugby-jersey-green-white",
-      "productName": "Rugby jersey (green & white)",
-      "size": "S",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "rugby-jersey-green-white__M": {
-      "productId": "rugby-jersey-green-white",
-      "productName": "Rugby jersey (green & white)",
-      "size": "M",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "rugby-jersey-green-white__L": {
-      "productId": "rugby-jersey-green-white",
-      "productName": "Rugby jersey (green & white)",
-      "size": "L",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "rugby-jersey-green-white__XL": {
-      "productId": "rugby-jersey-green-white",
-      "productName": "Rugby jersey (green & white)",
-      "size": "XL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "rugby-jersey-green-white__XXL": {
-      "productId": "rugby-jersey-green-white",
-      "productName": "Rugby jersey (green & white)",
-      "size": "XXL",
-      "openingQty": 0,
-      "arrivedQty": 0,
-      "countedQty": null
-    },
-    "rugby-jersey-green-white__XXXL": {
-      "productId": "rugby-jersey-green-white",
-      "productName": "Rugby jersey (green & white)",
       "size": "XXXL",
       "openingQty": 0,
       "arrivedQty": 0,
