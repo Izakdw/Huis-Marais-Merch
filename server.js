@@ -77,14 +77,17 @@ function getStore() {
       products: initialProducts,
       inventory: inventory,
       sales: [],
-      arrivals: []
+      arrivals: [],
+      initiatives: []
     };
 
     fs.writeFileSync(STORE_FILE, JSON.stringify(store, null, 2));
     return store;
   }
 
-  return JSON.parse(fs.readFileSync(STORE_FILE, 'utf-8'));
+  const store = JSON.parse(fs.readFileSync(STORE_FILE, 'utf-8'));
+  if (!store.initiatives) store.initiatives = [];
+  return store;
 }
 
 const SYNC_SECRET = 'hm-merch-2026-sync-token';
@@ -94,7 +97,8 @@ async function pushToLiveCloud(store) {
   try {
     const payload = {
       products: store.products,
-      inventory: store.inventory
+      inventory: store.inventory,
+      initiatives: store.initiatives || []
     };
     const res = await fetch(`${RENDER_PUBLIC_URL}/api/cloud-sync`, {
       method: 'POST',
@@ -333,6 +337,14 @@ app.get('/api/public-catalog', (req, res) => {
       };
     });
 
+    // Move all in-stock items to the top, out-of-stock items to the bottom
+    publicCatalog.sort((a, b) => {
+      if (a.inStock === b.inStock) {
+        return (b.totalAvailable || 0) - (a.totalAvailable || 0);
+      }
+      return a.inStock ? -1 : 1;
+    });
+
     res.json({
       residenceName: 'Huis Marais • 80 Jaar Merch',
       logo: '/images/80th-logo.png',
@@ -360,6 +372,9 @@ app.post('/api/cloud-sync', (req, res) => {
     const currentStore = getStore();
     currentStore.products = products;
     currentStore.inventory = inventory;
+    if (req.body.initiatives && Array.isArray(req.body.initiatives)) {
+      currentStore.initiatives = req.body.initiatives;
+    }
 
     // Save to disk
     const jsonContent = JSON.stringify(currentStore, null, 2);
@@ -424,6 +439,136 @@ app.get('/api/check-cloud-sync', async (req, res) => {
   }
 });
 
+// POST Public Every Huisman anonymous request
+app.post('/api/initiatives/request', (req, res) => {
+  try {
+    const { room, size, note } = req.body;
+    if (!room || !size) {
+      return res.status(400).json({ error: 'Room number and size are required' });
+    }
+
+    const store = getStore();
+    if (!store.initiatives) store.initiatives = [];
+
+    const requestRecord = {
+      id: 'eh_' + Date.now() + '_' + Math.random().toString(36).substr(2, 4),
+      date: new Date().toISOString().split('T')[0],
+      room: String(room).trim(),
+      size: String(size).trim(),
+      note: note ? String(note).trim() : '',
+      status: 'Pending Drop-Off',
+      allocatedItem: null,
+      fulfilledDate: null
+    };
+
+    store.initiatives.unshift(requestRecord);
+    saveStore(store);
+
+    console.log(`[EVERY HUISMAN] New anonymous request: Room ${room} (Size ${size})`);
+    res.json({ success: true, message: 'Request recorded confidentially', request: requestRecord });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET Private Every Huisman requests for Admin Portal
+app.get('/api/initiatives', (req, res) => {
+  try {
+    const store = getStore();
+    res.json({ initiatives: store.initiatives || [] });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST Fulfill Every Huisman request (Drop off item & deduct stock at R0)
+app.post('/api/initiatives/:id/fulfill', (req, res) => {
+  try {
+    const { productId, size } = req.body;
+    if (!productId || !size) {
+      return res.status(400).json({ error: 'Product and size to allocate are required' });
+    }
+
+    const store = getStore();
+    if (!store.initiatives) store.initiatives = [];
+    const itemReq = store.initiatives.find(r => r.id === req.params.id);
+    if (!itemReq) {
+      return res.status(404).json({ error: 'Initiative request not found' });
+    }
+
+    const product = store.products.find(p => p.id === productId);
+    if (!product) {
+      return res.status(404).json({ error: 'Selected product not found' });
+    }
+
+    // Check stock
+    const invKey = `${productId}__${size}`;
+    const invItem = store.inventory[invKey];
+    const totalReceived = invItem ? ((invItem.openingQty || 0) + (invItem.arrivedQty || 0)) : 0;
+    const currentSold = store.sales
+      .filter(s => s.productId === productId && s.size === size)
+      .reduce((sum, s) => sum + s.qty, 0);
+
+    const remaining = totalReceived - currentSold;
+    if (remaining < 1) {
+      return res.status(400).json({ error: `Not enough stock for ${product.name} (${size}). Only ${remaining} remaining.` });
+    }
+
+    // Create a special sale record with unitPrice 0
+    const saleRecord = {
+      id: 'sale_' + Date.now() + '_' + Math.random().toString(36).substr(2, 4),
+      date: new Date().toISOString().split('T')[0],
+      buyer: `Every Huisman (Room ${itemReq.room})`,
+      productId,
+      productName: product.name,
+      size,
+      qty: 1,
+      unitPrice: 0,
+      amount: 0,
+      costPrice: product.costPriceVat || product.costPrice || 0,
+      profit: 0 - (product.costPriceVat || product.costPrice || 0),
+      notes: `Every Huisman Initiative Drop-Off (Room ${itemReq.room})`
+    };
+
+    store.sales.unshift(saleRecord);
+
+    itemReq.status = 'Dropped Off';
+    itemReq.allocatedItem = `${product.name} (${size})`;
+    itemReq.fulfilledDate = new Date().toISOString().split('T')[0];
+
+    saveStore(store);
+    const metrics = calculateMetrics(store);
+
+    res.json({
+      success: true,
+      message: `Allocated ${product.name} (${size}) to Room ${itemReq.room} and deducted 1 from stock.`,
+      initiative: itemReq,
+      summary: metrics.summary,
+      stockItems: metrics.stockItems
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// DELETE remove an initiative request
+app.delete('/api/initiatives/:id', (req, res) => {
+  try {
+    const store = getStore();
+    if (!store.initiatives) store.initiatives = [];
+    const idx = store.initiatives.findIndex(r => r.id === req.params.id);
+    if (idx === -1) {
+      return res.status(404).json({ error: 'Request not found' });
+    }
+
+    store.initiatives.splice(idx, 1);
+    saveStore(store);
+    res.json({ success: true, message: 'Request removed' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // GET Full State for Admin Portal
 app.get('/api/data', (req, res) => {
   try {
@@ -433,6 +578,7 @@ app.get('/api/data', (req, res) => {
       products: store.products,
       sales: store.sales,
       arrivals: store.arrivals,
+      initiatives: store.initiatives || [],
       summary: metrics.summary,
       stockItems: metrics.stockItems
     });

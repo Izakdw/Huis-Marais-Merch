@@ -51,7 +51,10 @@
           <span class="text-amber-900 ml-1">Check your size below, tap <strong>Claim via WhatsApp</strong> to message Izak, and collect at the <strong>Raadsaal</strong>. Payment on collection via <strong>SnapScan</strong> or <strong>EFT</strong>.</span>
         </div>
       </div>
-      <div class="flex items-center gap-2 shrink-0 self-end sm:self-center">
+      <div class="flex items-center gap-2 shrink-0 self-end sm:self-center flex-wrap">
+        <a href="#every-huisman-section" class="inline-flex items-center gap-1 bg-emerald-900 hover:bg-emerald-800 text-emerald-100 px-2.5 py-1 rounded-lg font-bold text-[11px] transition shadow-sm border border-emerald-700/60">
+          🤝 Every Huisman Initiative
+        </a>
         <span class="inline-flex items-center gap-1 bg-amber-200/80 text-amber-950 px-2.5 py-1 rounded-lg font-bold text-[11px]">
           📱 SnapScan / EFT on collection
         </span>
@@ -107,6 +110,68 @@
       <!-- Dynamically Populated -->
       <div class="col-span-full py-16 text-center text-slate-400">Loading merchandise...</div>
     </div>
+
+    <!-- THE EVERY HUISMAN INITIATIVE SECTION -->
+    <section id="every-huisman-section" class="bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 rounded-3xl p-5 sm:p-7 text-white shadow-xl border border-emerald-700/50 space-y-4 scroll-mt-20">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-emerald-800/60">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-amber-400 text-emerald-950 flex items-center justify-center text-xl font-black shadow-md shrink-0">
+            🤝
+          </div>
+          <div>
+            <h2 class="text-base sm:text-lg font-black tracking-tight text-white flex items-center gap-2">
+              <span>The Every Huisman Initiative</span>
+              <span class="bg-emerald-500/20 text-emerald-300 text-[10px] font-bold uppercase px-2 py-0.5 rounded-full border border-emerald-500/30">100% Anonymous</span>
+            </h2>
+            <p class="text-xs text-emerald-200/90 font-medium">Every Huisman belongs, and every Huisman deserves to wear house merch.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+        If cost is a barrier, simply enter your <strong>Room Number</strong> and <strong>Size</strong> below. We will discreetly drop off an official piece of Huis Marais merchandise at your door — completely free of charge and 100% anonymous. No name, no phone number, and no questions asked.
+      </p>
+
+      <form id="every-huisman-form" onsubmit="handleEveryHuismanSubmit(event)" class="space-y-3 pt-1">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label class="block text-[11px] font-bold uppercase tracking-wider text-emerald-300 mb-1">Room Number *</label>
+            <input type="text" id="eh-room" required placeholder="e.g. 214" class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-800/90 border border-emerald-700/60 rounded-xl text-white placeholder-slate-400 focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition">
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold uppercase tracking-wider text-emerald-300 mb-1">Clothing Size *</label>
+            <select id="eh-size" required class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-800/90 border border-emerald-700/60 rounded-xl text-white focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition">
+              <option value="" disabled selected>-- Select your size --</option>
+              <option value="S">Small (S)</option>
+              <option value="M">Medium (M)</option>
+              <option value="L">Large (L)</option>
+              <option value="XL">Extra Large (XL)</option>
+              <option value="XXL">2X Large (XXL)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold uppercase tracking-wider text-emerald-300 mb-1">Preference (Optional)</label>
+            <input type="text" id="eh-note" placeholder="e.g. Prefer shorts if possible" class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-800/90 border border-emerald-700/60 rounded-xl text-white placeholder-slate-400 focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition">
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-1">
+          <p class="text-[11px] text-slate-400 flex items-center gap-1.5">
+            <span>🔒</span>
+            <span>Sent directly & confidentially to Izak. Left at your door.</span>
+          </p>
+          <button type="submit" id="eh-submit-btn" class="w-full sm:w-auto px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm text-emerald-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 hover:brightness-105 active:scale-[0.98] transition shadow-md flex items-center justify-center gap-2 shrink-0">
+            <span>🎁 Request Anonymous Drop-Off</span>
+          </button>
+        </div>
+      </form>
+
+      <div id="eh-success" class="hidden p-4 rounded-2xl bg-emerald-900/90 border border-emerald-400/60 text-xs sm:text-sm text-emerald-100 text-center font-medium shadow-inner">
+        ✓ Request received confidentially! An official piece of Huis Marais merch will be dropped off at your room soon. Wear it with pride!
+      </div>
+    </section>
 
   </main>
 
@@ -176,6 +241,14 @@
         const matchCat = selectedCategory === 'All' || item.category.toLowerCase().includes(selectedCategory.toLowerCase());
         const matchQuery = item.name.toLowerCase().includes(query) || (item.colour && item.colour.toLowerCase().includes(query)) || item.category.toLowerCase().includes(query);
         return matchCat && matchQuery;
+      });
+
+      // Always sort all in-stock items to the top, out-of-stock items to the bottom
+      filtered.sort((a, b) => {
+        if (a.inStock === b.inStock) {
+          return (b.totalAvailable || 0) - (a.totalAvailable || 0);
+        }
+        return a.inStock ? -1 : 1;
       });
 
       if (filtered.length === 0) {
@@ -292,6 +365,60 @@
 
         grid.appendChild(card);
       });
+    }
+
+    async function handleEveryHuismanSubmit(e) {
+      e.preventDefault();
+      const room = document.getElementById('eh-room').value.trim();
+      const size = document.getElementById('eh-size').value;
+      const note = (document.getElementById('eh-note').value || '').trim();
+      const btn = document.getElementById('eh-submit-btn');
+      const form = document.getElementById('every-huisman-form');
+      const successDiv = document.getElementById('eh-success');
+
+      if (!room || !size) return;
+
+      btn.disabled = true;
+      btn.innerHTML = '<span>Submitting...</span>';
+
+      // 1. Send Email to Izak (29322464@sun.ac.za) via FormSubmit
+      const emailPayload = {
+        _subject: `🤝 Every Huisman Drop-Off: Room ${room} (Size ${size})`,
+        _template: 'table',
+        _captcha: 'false',
+        'Initiative': 'The Every Huisman Initiative',
+        'Room Number': room,
+        'Clothing Size': size,
+        'Preference / Note': note || 'No specific preference (any item)',
+        'Date & Time': new Date().toLocaleString('en-ZA', { timeZone: 'Africa/Johannesburg' })
+      };
+
+      try {
+        fetch('https://formsubmit.co/ajax/29322464@sun.ac.za', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(emailPayload)
+        }).catch(err => console.warn('FormSubmit notification error:', err));
+      } catch (err) {}
+
+      // 2. Also log request into Merch Management database
+      try {
+        await fetch('/api/initiatives/request', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ room, size, note })
+        });
+      } catch (err) {
+        console.warn('API log deferred:', err);
+      }
+
+      // 3. Show respectful confirmation
+      form.reset();
+      form.classList.add('hidden');
+      successDiv.classList.remove('hidden');
     }
   </script>
 </body>

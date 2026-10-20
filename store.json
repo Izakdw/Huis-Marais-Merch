@@ -6,8 +6,8 @@
       "category": "Jerseys",
       "colour": "White",
       "costPrice": 590,
-      "costPriceVat": 0,
-      "sellingPrice": 750,
+      "costPriceVat": 678.5,
+      "sellingPrice": 700,
       "sizes": [
         "S",
         "M",
@@ -25,24 +25,7 @@
       "colour": "Black",
       "costPrice": 205,
       "costPriceVat": 235.75,
-      "sellingPrice": 260,
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "defaultEst": {}
-    },
-    {
-      "id": "white-sport-shorts",
-      "name": "White sport shorts",
-      "category": "Shorts",
-      "colour": "White",
-      "costPrice": 240,
-      "costPriceVat": 276,
-      "sellingPrice": 280,
+      "sellingPrice": 250,
       "sizes": [
         "S",
         "M",
@@ -104,6 +87,40 @@
       "defaultEst": {}
     },
     {
+      "id": "grey-hoodie",
+      "name": "Grey hoodie",
+      "category": "Jerseys",
+      "colour": "Grey",
+      "costPrice": 650,
+      "costPriceVat": 0,
+      "sellingPrice": 700,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "white-sport-shorts",
+      "name": "White sport shorts",
+      "category": "Shorts",
+      "colour": "White",
+      "costPrice": 240,
+      "costPriceVat": 276,
+      "sellingPrice": 280,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
       "id": "rain-jackets",
       "name": "Rain Jackets",
       "category": "Jackets",
@@ -126,9 +143,9 @@
       "name": "HM underwear",
       "category": "Underwear",
       "colour": "Standard",
-      "costPrice": 0,
+      "costPrice": 100,
       "costPriceVat": 0,
-      "sellingPrice": 0,
+      "sellingPrice": 100,
       "sizes": [
         "S",
         "M",
@@ -278,13 +295,30 @@
       "defaultEst": {}
     },
     {
-      "id": "grey-hoodie",
-      "name": "Grey hoodie",
-      "category": "Jerseys",
-      "colour": "Grey",
-      "costPrice": 0,
+      "id": "golf-shirt-plain",
+      "name": "Golf Shirt(Plain)",
+      "category": "Tops",
+      "colour": "White, Green",
+      "costPrice": 200,
       "costPriceVat": 0,
-      "sellingPrice": 700,
+      "sellingPrice": 200,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "defaultEst": {}
+    },
+    {
+      "id": "golf-shirt-spotted-christmas-gift-for-your-dad",
+      "name": "Golf Shirt(Spotted)-Christmas gift for your Dad",
+      "category": "Tops",
+      "colour": "Standard",
+      "costPrice": 200,
+      "costPriceVat": 0,
+      "sellingPrice": 200,
       "sizes": [
         "S",
         "M",
@@ -397,7 +431,7 @@
       "productName": "White sport shorts",
       "size": "M",
       "openingQty": 0,
-      "arrivedQty": 0,
+      "arrivedQty": 4,
       "countedQty": null
     },
     "white-sport-shorts__L": {
@@ -405,7 +439,7 @@
       "productName": "White sport shorts",
       "size": "L",
       "openingQty": 0,
-      "arrivedQty": 0,
+      "arrivedQty": 3,
       "countedQty": null
     },
     "white-sport-shorts__XL": {
@@ -413,7 +447,7 @@
       "productName": "White sport shorts",
       "size": "XL",
       "openingQty": 0,
-      "arrivedQty": 0,
+      "arrivedQty": 4,
       "countedQty": null
     },
     "white-sport-shorts__XXL": {
@@ -421,7 +455,7 @@
       "productName": "White sport shorts",
       "size": "XXL",
       "openingQty": 0,
-      "arrivedQty": 0,
+      "arrivedQty": 3,
       "countedQty": null
     },
     "quarter-zip__S": {
@@ -925,7 +959,7 @@
       "productName": "Newcomers caps",
       "size": "One size",
       "openingQty": 0,
-      "arrivedQty": 0,
+      "arrivedQty": 2,
       "countedQty": null
     },
     "rugby-jersey-green-yellow__S": {
@@ -1015,10 +1049,141 @@
       "openingQty": 0,
       "arrivedQty": 0,
       "countedQty": null
+    },
+    "golf-shirt-plain__S": {
+      "productId": "golf-shirt-plain",
+      "productName": "Golf Shirt(Plain)",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 1,
+      "countedQty": null
+    },
+    "golf-shirt-plain__M": {
+      "productId": "golf-shirt-plain",
+      "productName": "Golf Shirt(Plain)",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 4,
+      "countedQty": null
+    },
+    "golf-shirt-plain__L": {
+      "productId": "golf-shirt-plain",
+      "productName": "Golf Shirt(Plain)",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 8,
+      "countedQty": null
+    },
+    "golf-shirt-plain__XL": {
+      "productId": "golf-shirt-plain",
+      "productName": "Golf Shirt(Plain)",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 5,
+      "countedQty": null
+    },
+    "golf-shirt-plain__XXL": {
+      "productId": "golf-shirt-plain",
+      "productName": "Golf Shirt(Plain)",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 2,
+      "countedQty": null
+    },
+    "golf-shirt-spotted-christmas-gift-for-your-dad__S": {
+      "productId": "golf-shirt-spotted-christmas-gift-for-your-dad",
+      "productName": "Golf Shirt(Spotted)-Christmas gift for your Dad",
+      "size": "S",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "golf-shirt-spotted-christmas-gift-for-your-dad__M": {
+      "productId": "golf-shirt-spotted-christmas-gift-for-your-dad",
+      "productName": "Golf Shirt(Spotted)-Christmas gift for your Dad",
+      "size": "M",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "golf-shirt-spotted-christmas-gift-for-your-dad__L": {
+      "productId": "golf-shirt-spotted-christmas-gift-for-your-dad",
+      "productName": "Golf Shirt(Spotted)-Christmas gift for your Dad",
+      "size": "L",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "golf-shirt-spotted-christmas-gift-for-your-dad__XL": {
+      "productId": "golf-shirt-spotted-christmas-gift-for-your-dad",
+      "productName": "Golf Shirt(Spotted)-Christmas gift for your Dad",
+      "size": "XL",
+      "openingQty": 0,
+      "arrivedQty": 0,
+      "countedQty": null
+    },
+    "golf-shirt-spotted-christmas-gift-for-your-dad__XXL": {
+      "productId": "golf-shirt-spotted-christmas-gift-for-your-dad",
+      "productName": "Golf Shirt(Spotted)-Christmas gift for your Dad",
+      "size": "XXL",
+      "openingQty": 0,
+      "arrivedQty": 6,
+      "countedQty": null
     }
   },
   "sales": [],
   "arrivals": [
+    {
+      "id": "arr_1792478398697",
+      "date": "2026-10-20",
+      "productId": "newcomers-caps",
+      "productName": "Newcomers caps",
+      "sizeBreakdown": {
+        "One size": 2
+      },
+      "totalUnits": 2,
+      "notes": ""
+    },
+    {
+      "id": "arr_1792478158392",
+      "date": "2026-10-20",
+      "productId": "golf-shirt-spotted-christmas-gift-for-your-dad",
+      "productName": "Golf Shirt(Spotted)-Christmas gift for your Dad",
+      "sizeBreakdown": {
+        "XXL": 6
+      },
+      "totalUnits": 6,
+      "notes": ""
+    },
+    {
+      "id": "arr_1792478064830",
+      "date": "2026-10-20",
+      "productId": "golf-shirt-plain",
+      "productName": "Golf Shirt(Plain)",
+      "sizeBreakdown": {
+        "S": 1,
+        "M": 4,
+        "L": 8,
+        "XL": 5,
+        "XXL": 2
+      },
+      "totalUnits": 20,
+      "notes": ""
+    },
+    {
+      "id": "arr_1792477951065",
+      "date": "2026-10-20",
+      "productId": "white-sport-shorts",
+      "productName": "White sport shorts",
+      "sizeBreakdown": {
+        "M": 4,
+        "L": 3,
+        "XL": 4,
+        "XXL": 3
+      },
+      "totalUnits": 14,
+      "notes": ""
+    },
     {
       "id": "arr_1791382946797",
       "date": "2026-10-07",
@@ -1109,5 +1274,6 @@
       "totalUnits": 8,
       "notes": ""
     }
-  ]
+  ],
+  "initiatives": []
 }
